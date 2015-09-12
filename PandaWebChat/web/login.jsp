@@ -14,17 +14,14 @@
     <body>
         
         
-       <h1>Login to my great page!</h1>
+       <h1>Login!</h1>
         <form method="POST" action="j_security_check">
             <input type ="text" name="j_username">
-            <input type ="text" name ="j_password">
+            <input type ="password" name ="j_password">
             <input type="submit" value="login">
             <% String msg = request.getParameter("error");%>
             <div style="color:red"><%= msg%></div>
         </form>
-        
-        
-        
-        
+     
     </body>
 </html>
